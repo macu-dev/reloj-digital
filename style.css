@@ -1,0 +1,111 @@
+*{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Quantico-Regular';
+  src: url("font/Quantico-Regular.ttf");
+}
+
+html,body{
+  width:100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-y: hidden;
+}
+
+body{
+  background: url("img/bg.jpg") #0000; /*si no te carga la imagen se pone ese color*/
+  background-attachment: fixed;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}
+
+.conteiner{
+  width: 100%;
+  height: 250px;
+  max-width: 1000px;
+  margin:25px auto;
+  display: flex;
+}
+
+.reloj{
+  margin:32px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+}
+
+.reloj span {
+  display: inline-block;
+  line-height: 1em;
+  color:white;
+  text-shadow: 1px 2px 1px #000;
+}
+
+.fecha{
+  background-color: rgba(61, 60, 61, 0.534);
+  border-radius: 10px;
+  width: 70%;
+  margin:10px;
+  height: 70px;
+  padding-top:20px;
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 1px;
+
+}
+
+.hrs{
+  background-color: rgba(61, 60, 61, 0.534);
+  border-radius:10px;
+  width: 70%;
+  margin-bottom: 10px;
+  height: 80px;
+  font-family:"Quantico-Regular";
+  font-size:1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:2.5em;
+  letter-spacing: 8px;
+}
+
+.titulo{
+  text-align: center;
+  padding:0;
+  margin:0;
+  margin-top:42px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:3.5em;
+  letter-spacing: 6px;
+  text-shadow: 1px 1px 3px #ffff;
+}
+
+@media (max-width: 659px){
+  .fecha{
+    font-size: 1.3em;
+    width:100%;
+    height:77px;
+    padding-top:25px;
+    letter-spacing:1px;
+  }
+
+  .titulo{
+    font-size:3em;
+  }
+
+  .hrs{
+    font-size:2em;
+    letter-spacing:0;
+  }
+}
+
+
